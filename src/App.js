@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import { Hero } from "./compo/Hero";
+//import { Hero } from "./compo/Hero";
 import { Navbar } from "./compo/Navbar";
 // import { About } from "./compo/About";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
