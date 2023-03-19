@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Outlet,Link } from 'react-router-dom'
 
 export const Navbar = () => {
-  return (
+  return (<>
+
+
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div className="container">
           <a className="navbar-brand text-white">Navbar</a>
@@ -20,7 +22,7 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active text-white" to="/"  action>
+                <Link className="nav-link active text-white" to="/Home"  action>
                   Home
                 </Link>
               </li>
@@ -48,5 +50,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Outlet />
+      </>
   )
 }
